@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="containerLeft">
+            <h2>Bem vindo</h2>
+            <p>Insira seus dados para acessar sua conta.</p>
+        </div>
+        <div class="containerRight">
+            <h1>Login</h1>
+            <form action="#">
+                <label for="email">Email
+                    <input type="email" placeholder="Email" onclick="">
+                </label>
+                <label for="password">Senha
+                    <input type="password" placeholder="Senha">
+                </label>
+                <a href="#">Esqueci a senha.</a>
+                <button type="submit">Fazer login</button>
+                <p>Não tem uma conta? <a href="#">Cadastre-se!</a></p>
+            </form>
+        </div>
+    </main>
+    <script>
+        const clickInput = document.querySelectorAll("input");
+        const containerLeft = document.querySelector(".containerLeft");
+
+        clickInput.forEach(clickInput => {
+            clickInput.addEventListener("focus", function () {
+                containerLeft.style.filter = 'blur(2px)';
+                containerLeft.style.transition = 'filter 0.3s ease';
+            })
+            clickInput.addEventListener('blur', () => {
+                containerLeft.style.filter = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
