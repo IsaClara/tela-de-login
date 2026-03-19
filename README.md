@@ -21,6 +21,11 @@ O diferencial deste projeto é a manipulação do DOM via JavaScript para criar 
 * **CSS3:** Estilização (referenciada via `css/style.css`).
 * **JavaScript (Vanilla):** Lógica para manipulação de filtros CSS e transições de estado.
 
+## Preview
+
+![Preview do projeto](/img/preview.png)
+
+
 ## Como visualizar
 1. Clone este repositório ou baixe os arquivos.
 2. Certifique-se de que a pasta `css` contém o arquivo `style.css`.
